@@ -2,6 +2,7 @@
 #define __SPI_H
 
 #include <stdint.h>
+#include <avr/io.h>
 
 #define SPI_PORT PORTB
 #define SPI_PIN PINB
