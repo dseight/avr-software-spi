@@ -5,7 +5,8 @@
 
 void spi_init(void)
 {
-    SPI_DDR |= _BV(SPI_MOSI) | _BV(SPI_SCLK);
+    SPI_DDR |= _BV(SPI_MOSI);
+    SPI_DDR |= _BV(SPI_SCLK);
     SPI_DDR &= ~_BV(SPI_MISO);
 
     // Set SCLK to low
